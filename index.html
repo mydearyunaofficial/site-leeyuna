@@ -4,25 +4,170 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lee Yuna | Multimedia Storyteller</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@200;300;400&display=swap" rel="stylesheet">
+    
     <style>
-        body { background-color: #fff5f5; color: #7a5c5c; font-family: 'Segoe UI', sans-serif; text-align: center; padding: 50px; }
-        .logo { max-width: 200px; margin-bottom: 20px; }
-        h1 { font-weight: 300; letter-spacing: 2px; }
-        .links { display: flex; flex-direction: column; align-items: center; gap: 15px; margin-top: 30px; }
-        a { text-decoration: none; background: #e2b4b4; color: white; padding: 15px 30px; border-radius: 25px; width: 250px; transition: 0.3s; }
-        a:hover { background: #d19a9a; transform: scale(1.05); }
+        :root {
+            --rose: #e2b4b4;
+            --soft-nude: #fff5f5;
+            --text: #7a5c5c;
+            --white: #ffffff;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body { 
+            background-color: var(--soft-nude); 
+            color: var(--text); 
+            font-family: 'Montserrat', sans-serif; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            padding: 60px 20px;
+        }
+
+        .container { 
+            max-width: 500px; 
+            width: 100%;
+            text-align: center; 
+        }
+
+        /* Estilo da Logo */
+        .logo { 
+            width: 120px; 
+            height: 120px;
+            object-fit: cover;
+            margin-bottom: 25px; 
+            border-radius: 50%; 
+            border: 1px solid var(--rose);
+            padding: 5px;
+            background: var(--white);
+        }
+
+        h1 { 
+            font-family: 'Cinzel', serif;
+            font-size: 1.8rem; 
+            letter-spacing: 6px; 
+            font-weight: 400; 
+            margin-bottom: 8px; 
+            text-transform: uppercase;
+        }
+
+        .subtitle { 
+            font-size: 0.75rem; 
+            letter-spacing: 3px; 
+            text-transform: uppercase; 
+            margin-bottom: 50px; 
+            font-weight: 300;
+            opacity: 0.8;
+        }
+
+        /* Títulos das Secções */
+        .section-title { 
+            font-family: 'Cinzel', serif;
+            font-size: 0.8rem; 
+            letter-spacing: 4px; 
+            text-transform: uppercase; 
+            margin: 40px 0 20px; 
+            border-bottom: 1px solid var(--rose); 
+            padding-bottom: 8px; 
+            display: block;
+        }
+
+        /* Grelha de Links */
+        .grid { 
+            display: grid; 
+            grid-template-columns: 1fr 1fr; 
+            gap: 12px; 
+            width: 100%; 
+        }
+
+        .full { grid-column: span 2; }
+
+        a { 
+            text-decoration: none; 
+            background-color: var(--white);
+            border: 1px solid var(--rose);
+            color: var(--text); 
+            padding: 14px; 
+            font-size: 0.75rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+            display: block;
+        }
+
+        a:hover { 
+            background: var(--rose); 
+            color: var(--white); 
+            letter-spacing: 4px;
+        }
+
+        /* Frase Poética */
+        .manifesto {
+            margin-top: 50px;
+            font-style: italic;
+            font-size: 0.85rem;
+            font-weight: 300;
+            line-height: 1.6;
+            max-width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        footer { 
+            margin-top: 80px; 
+            font-size: 0.65rem; 
+            letter-spacing: 2px; 
+            opacity: 0.5; 
+            text-transform: uppercase;
+        }
+
+        @media (max-width: 480px) {
+            .grid { grid-template-columns: 1fr; }
+            .full { grid-column: span 1; }
+        }
     </style>
 </head>
 <body>
-<img src="logo-leewa.png-2.png" alt="Logo LEEWA" class="logo">
-    <h1>LEE YUNA</h1>
-    <p>Multimedia Storyteller & IP Developer</p>
-    
-    <div class="links">
-        <a href="https://www.amazon.com.br/stores/Lee-Yuna/author/B0G2T5J9FJ?ref=ap_rdr&shoppingPortalEnabled=true" target="_blank">LIVROS NA AMAZON</a>
-        <a href="https://loja.uiclap.com/titulo/ua132906/" target="_blank">LIVROS NA UICLAP</a>
-        <a href="httpshttps://www.youtube.com/@MyDearYunaOfficial" target="_blank">MÚSICA (UBC)</a>
-        <a href="#" style="opacity: 0.6;">LEEWA - COMING SOON</a>
+
+    <div class="container">
+        <img src="logo-leewa.png-3.png" alt="LEEWA Logo" class="logo">
+        
+        <h1>LEE YUNA</h1>
+        <div class="subtitle">Multimedia Storyteller & IP Developer</div>
+
+        <div class="section-title">Literature</div>
+        <div class="grid">
+            <a href="COLE_AQUI_O_LINK_DA_AMAZON" target="_blank">Fragmentada</a>
+            <a href="https://loja.uiclap.com/titulo/ua132906/" target="_blank">Eternidade</a>
+            <a href="COLE_AQUI_O_OUTRO_LINK" class="full">O Amor que não pediu forma</a>
+        </div>
+
+        <div class="section-title">Fashion & Identity</div>
+        <div class="grid">
+            <a href="#" class="full">LEEWA: Romantic Soft Couture</a>
+        </div>
+
+        <div class="section-title">Original Soundscapes</div>
+        <div class="grid">
+            <a href="https://youtu.be/dHYLsgc11kg?si=eQzmrs2QrEuXK9DH" class="full">If I Reach You (Official OST)</a>
+        </div>
+
+        <p class="manifesto">
+            "Documenting the silent space where soul and destiny align through Affective Interludes."
+        </p>
+
+        <footer>
+            © 2026-2027 Brazil — South Korea<br>
+            All Rights Reserved
+        </footer>
     </div>
+
 </body>
 </html>
