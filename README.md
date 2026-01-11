@@ -15,3 +15,4 @@ This project is part of the **Keyokan Universe**.
 ### 📚 Education & Expertise
 - **Fashion Design (Bacharelado):** Focus on Visual ID and Costume Design for Cinema.
 - **Multimedia Storytelling:** Narrative architect for the Keyokan Saga.
+- 
