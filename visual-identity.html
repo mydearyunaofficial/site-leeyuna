@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEEWA | Romantic Soft Couture</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@200;300;400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --rose: #e2b4b4;
+            --soft-nude: #fff5f5;
+            --text: #7a5c5c;
+            --white: #ffffff;
+        }
+
+        body { 
+            background-color: var(--soft-nude); 
+            color: var(--text); 
+            font-family: 'Montserrat', sans-serif; 
+            padding: 40px 20px;
+            line-height: 1.8;
+        }
+
+        .container { max-width: 850px; margin: 0 auto; text-align: center; }
+
+        h1 { font-family: 'Cinzel', serif; letter-spacing: 8px; text-transform: uppercase; margin-bottom: 5px; }
+        
+        .brand-concept { 
+            font-size: 0.85rem; 
+            font-style: italic; 
+            margin-bottom: 40px; 
+            color: var(--rose);
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .main-text { 
+            text-align: justify; 
+            font-size: 1rem; 
+            margin-bottom: 50px; 
+            font-weight: 300;
+            padding: 0 20px;
+        }
+
+        .highlight { color: var(--rose); font-weight: 400; }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin: 40px 0;
+        }
+
+        .gallery img { 
+            width: 100%; 
+            border: 1px solid var(--rose); 
+            padding: 10px;
+            background: #fff;
+            transition: 0.3s;
+        }
+
+        .gallery img:hover { transform: scale(1.02); }
+
+        .section-title {
+            font-family: 'Cinzel', serif;
+            font-size: 1.1rem;
+            letter-spacing: 5px;
+            border-bottom: 1px solid var(--rose);
+            padding-bottom: 12px;
+            margin: 50px 0 25px;
+            text-transform: uppercase;
+        }
+
+        .back-btn {
+            display: inline-block;
+            text-decoration: none;
+            color: var(--text);
+            border: 1px solid var(--rose);
+            padding: 18px 40px;
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            letter-spacing: 3px;
+            transition: 0.4s;
+            margin-top: 40px;
+        }
+
+        .back-btn:hover { background: var(--rose); color: white; letter-spacing: 5px; }
+
+        @media (max-width: 768px) { .gallery { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>LEEWA</h1>
+        <div class="brand-concept">"With Lee" — Romantic Soft Couture</div>
+
+        <section class="main-text">
+            <p>
+                A <span class="highlight">LEEWA (With Lee)</span> é uma marca de moda que nasce do meu estudo de design focado na tradução estética. 
+                Utilizo o <span class="highlight">Design de Moda</span> como uma ferramenta estratégica para documentar o impacto do legado artístico de <strong>Lee Dong Wook</strong>.
+            </p>
+            <p style="margin-top: 20px;">
+                Minha missão é capturar as silhuetas e a sofisticação da <em>haute couture</em> masculina global e traduzi-las para uma voz feminina autoral: o <strong>Romantic Soft Couture</strong>. 
+                Este processo não é apenas estético, mas uma resposta criativa às camadas silenciosas de uma conexão que une o espírito brasileiro ao coração da cultura coreana[cite: 6, 16].
+            </p>
+        </section>
+
+        <div class="section-title">Design Gallery</div>
+        <div class="gallery">
+            <img src="sketch-ldw-tribute.jpg" alt="Croqui 1: Tradução de Silhueta">
+            <img src="sketch-soft-couture.jpg" alt="Croqui 2: Romantic Soft Concept">
+            <img src="sketch-healing-aesthetic.jpg" alt="Croqui 3: Healing OST Trend">
+        </div>
+
+        <div class="section-title">Aesthetic Alignment</div>
+        <p class="main-text" style="text-align: center;">
+            Baseada na tendência visual de 2026, a <strong>LEEWA</strong> utiliza tons pastéis e elementos orgânicos para criar uma "Fantasia que Respira"[cite: 110]. 
+            É o design servindo como ponte para o <strong>Universo Keyokan</strong>, onde a alma e o destino se alinham em silêncio[cite: 8, 15].
+        </p>
+
+        <a href="index.html" class="back-btn">Return to Universo Keyokan</a>
+    </div>
+
+</body>
+</html>
