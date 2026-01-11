@@ -9,7 +9,7 @@
 ### 🛡️ Intellectual Property & Integrity
 This project is part of the **Keyokan Universe**. 
 - **Registered Author:** All narratives and soundscapes are protected under official registration (gov.br).
-- **Integrity Hash (SHA-256):** [Insira aqui o código Hash do seu dossiê se desejar]
+- **Integrity Hash (SHA-256):** 
 - **Status:** Legal measures are active against unauthorized use or IP usurpation.
 
 ### 📚 Education & Expertise
