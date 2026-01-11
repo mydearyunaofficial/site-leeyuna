@@ -37,26 +37,23 @@
             text-align: center; 
         }
 
-        /* --- NOVO ESTILO DO LOGO --- */
+        /* Logo imponente e com formato original */
         .logo-wrapper {
             width: 100%;
-            margin-bottom: 40px;
+            margin-bottom: 30px;
             display: flex;
             justify-content: center;
         }
 
         .logo { 
             width: 100%;
-            max-width: 450px; /* Aumentado significativamente para ser o foco */
+            max-width: 420px; 
             height: auto;
             object-fit: contain;
-            border-radius: 0 !important; /* Força a remoção de qualquer arredondamento */
+            border-radius: 0 !important;
             border: none !important;
-            padding: 0;
-            background: transparent;
         }
 
-        /* --- SEÇÕES --- */
         h1 { 
             font-family: 'Cinzel', serif;
             font-size: 2rem; 
@@ -79,9 +76,18 @@
             font-size: 0.7rem;
             letter-spacing: 2px;
             text-transform: uppercase;
-            margin-bottom: 40px;
+            margin-bottom: 30px;
             font-weight: 400;
             color: var(--rose);
+        }
+
+        .about-me {
+            margin: 20px auto 40px;
+            padding: 0 15px;
+            font-size: 0.9rem;
+            font-weight: 300;
+            line-height: 1.8;
+            text-align: justify;
         }
 
         .section-title { 
@@ -132,13 +138,12 @@
         }
 
         .manifesto {
-            margin-top: 60px;
+            margin: 60px auto;
             font-style: italic;
             font-size: 0.9rem;
             font-weight: 300;
             line-height: 1.8;
             max-width: 90%;
-            margin: 60px auto;
         }
 
         .ip-notice {
@@ -164,7 +169,6 @@
             .grid { grid-template-columns: 1fr; }
             .full { grid-column: span 1; }
             .logo { max-width: 300px; }
-            h1 { font-size: 1.5rem; }
         }
     </style>
 </head>
@@ -177,13 +181,24 @@
         </div>
 
         <div class="section-title">Visual Identity</div>
-        <div class="grid" style="margin-bottom: 50px;">
-            <a href="#" class="full">LEEWA: Romantic Soft Couture</a>
+        <div class="grid">
+            <a href="visual-identity.html" class="full">
+                LEEWA: Romantic Soft Couture <br>
+                <span style="font-size: 0.65rem; opacity: 0.8; letter-spacing: 1px;">
+                    Concept Tribute to Lee Dong Wook
+                </span>
+            </a>
         </div>
 
-        <h1>LEE YUNA</h1>
+        <h1 style="margin-top: 50px;">LEE YUNA</h1>
         <div class="subtitle">Screenwriter & Composer</div>
-        <div class="education">Fashion Design Student | IP Developer</div>
+        <div class="education">Fashion Design | IP Developer</div>
+
+        <section class="about-me">
+            <p>
+                Como <strong>Fashion Designer</strong> e <strong>Multimedia Storyteller</strong>, meu trabalho é uma resposta criativa às camadas silenciosas do legado artístico de <strong>Lee Dong Wook</strong>[cite: 14, 16]. Através da marca <strong>LEEWA (With Lee)</strong>, traduzo a sofisticação da alfaiataria global para o <em>Romantic Soft Couture</em>, unindo design, música e literatura no <strong>Universo Keyokan</strong>[cite: 17, 106].
+            </p>
+        </section>
 
         <div class="section-title">Latest Soundscape</div>
         <div class="video-container full">
@@ -200,7 +215,7 @@
         </div>
 
         <p class="manifesto">
-            "Documenting the silent space where soul and destiny align through Affective Interludes."
+            "Documenting the silent space where soul and destiny align through Affective Interludes." [cite: 15]
         </p>
 
         <div class="ip-notice">
