@@ -12,7 +12,6 @@
             --soft-nude: #fff5f5;
             --text: #7a5c5c;
             --white: #ffffff;
-            --gold: #d4af37;
         }
 
         * {
@@ -38,15 +37,14 @@
             text-align: center; 
         }
 
-        /* AJUSTE DO LOGO: Aumentado e sem formato redondo */
         .logo { 
-            width: 100%; /* Ocupa a largura disponível até o limite abaixo */
-            max-width: 280px; /* Limite de tamanho para não ficar exagerado */
-            height: auto; /* Mantém a proporção original da imagem */
+            width: 100%;
+            max-width: 280px;
+            height: auto;
             object-fit: contain;
-            margin-bottom: 30px; 
-            border-radius: 0; /* REMOVIDO O REDONDO */
-            border: none; /* Removida a borda fina anterior para um visual mais limpo */
+            margin-bottom: 20px; 
+            border-radius: 0;
+            border: none;
             padding: 0;
             background: transparent;
         }
@@ -73,7 +71,7 @@
             font-size: 0.65rem;
             letter-spacing: 2px;
             text-transform: uppercase;
-            margin-bottom: 50px;
+            margin-bottom: 30px;
             font-weight: 400;
             color: var(--rose);
         }
@@ -83,7 +81,7 @@
             font-size: 0.8rem; 
             letter-spacing: 4px; 
             text-transform: uppercase; 
-            margin: 40px 0 20px; 
+            margin: 30px 0 15px; 
             border-bottom: 1px solid var(--rose); 
             padding-bottom: 8px; 
             display: block;
@@ -99,7 +97,7 @@
         .full { grid-column: span 2; }
 
         .video-container {
-            margin-top: 20px;
+            margin-top: 15px;
             border: 1px solid var(--rose);
             padding: 10px;
             background: white;
@@ -156,7 +154,7 @@
         @media (max-width: 480px) {
             .grid { grid-template-columns: 1fr; }
             .full { grid-column: span 1; }
-            .logo { max-width: 200px; } /* Ajuste para celulares pequenos */
+            .logo { max-width: 220px; }
         }
     </style>
 </head>
@@ -165,6 +163,11 @@
     <div class="container">
         <img src="logo-leewa.png-3.png" alt="LEEWA Logo" class="logo">
         
+        <div class="section-title">Visual Identity</div>
+        <div class="grid" style="margin-bottom: 40px;">
+            <a href="#" class="full">LEEWA: Romantic Soft Couture</a>
+        </div>
+
         <h1>LEE YUNA</h1>
         <div class="subtitle">Screenwriter & Composer</div>
         <div class="education">Fashion Design | IP Developer</div>
@@ -172,20 +175,15 @@
         <div class="section-title">New Release: Official Soundscape</div>
         <div class="video-container full">
             <iframe width="100%" height="315" src="https://www.youtube.com/embed/S1snmHQhjvk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <a href="https://www.youtube.com/watch?v=S1snmHQhjvk" target="_blank" style="margin-top:10px; border:none; background:transparent;">Assista no YouTube</a>
+            <a href="https://www.youtube.com/watch?v=S1snmHQhjvk" target="_blank" style="margin-top:10px; border:none; background:transparent;">Watch "THE LINE THAT STAYED"</a>
         </div>
 
         <div class="section-title">Literature & Universe</div>
         <div class="grid">
-            <a href="https://substack.com/home/post/p-155026210" class="full" style="background-color: #ff6719; color: white; border: none;">Manifesto: O Direito de Existir e Criar em Paz</a>
+            <a href="https://substack.com/home/post/p-155026210" class="full" style="background-color: #ff6719; color: white; border: none;">Manifesto: O Direito de Existir em Paz</a>
             <a href="https://loja.uiclap.com/titulo/ua132906/" target="_blank">Eternidade</a>
             <a href="#" target="_blank">Fragmentada</a>
             <a href="https://substack.com/@mydearyunaofficial" class="full">Substack: Diários de Keyokan</a>
-        </div>
-
-        <div class="section-title">Visual Identity</div>
-        <div class="grid">
-            <a href="#" class="full">LEEWA: Romantic Soft Couture</a>
         </div>
 
         <p class="manifesto">
@@ -198,10 +196,7 @@
         </div>
 
         <footer>
-            © 2026-2027 Brazil — South Korea<br>
-            All Rights Reserved
-        </footer>
-    </div>
+            © 2026-2027
 
 </body>
 </html>
