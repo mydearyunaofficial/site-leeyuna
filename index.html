@@ -38,15 +38,17 @@
             text-align: center; 
         }
 
+        /* AJUSTE DO LOGO: Aumentado e sem formato redondo */
         .logo { 
-            width: 120px; 
-            height: 120px;
-            object-fit: cover;
-            margin-bottom: 25px; 
-            border-radius: 50%; 
-            border: 1px solid var(--rose);
-            padding: 5px;
-            background: var(--white);
+            width: 100%; /* Ocupa a largura disponível até o limite abaixo */
+            max-width: 280px; /* Limite de tamanho para não ficar exagerado */
+            height: auto; /* Mantém a proporção original da imagem */
+            object-fit: contain;
+            margin-bottom: 30px; 
+            border-radius: 0; /* REMOVIDO O REDONDO */
+            border: none; /* Removida a borda fina anterior para um visual mais limpo */
+            padding: 0;
+            background: transparent;
         }
 
         h1 { 
@@ -154,6 +156,7 @@
         @media (max-width: 480px) {
             .grid { grid-template-columns: 1fr; }
             .full { grid-column: span 1; }
+            .logo { max-width: 200px; } /* Ajuste para celulares pequenos */
         }
     </style>
 </head>
