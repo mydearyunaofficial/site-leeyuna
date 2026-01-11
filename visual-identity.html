@@ -53,6 +53,8 @@
 
         .gallery img { 
             width: 100%; 
+            height: 400px;
+            object-fit: contain;
             border: 1px solid var(--rose); 
             padding: 10px;
             background: #fff;
@@ -71,6 +73,15 @@
             text-transform: uppercase;
         }
 
+        .brand-essence {
+            background: white;
+            padding: 30px;
+            border: 1px solid var(--rose);
+            margin: 40px 0;
+            font-style: italic;
+            font-size: 0.95rem;
+        }
+
         .back-btn {
             display: inline-block;
             text-decoration: none;
@@ -86,7 +97,10 @@
 
         .back-btn:hover { background: var(--rose); color: white; letter-spacing: 5px; }
 
-        @media (max-width: 768px) { .gallery { grid-template-columns: 1fr; } }
+        @media (max-width: 768px) { 
+            .gallery { grid-template-columns: 1fr; }
+            .gallery img { height: auto; }
+        }
     </style>
 </head>
 <body>
@@ -97,27 +111,26 @@
 
         <section class="main-text">
             <p>
-                A <span class="highlight">LEEWA (With Lee)</span> é uma marca de moda que nasce do meu estudo de design focado na tradução estética. 
-                Utilizo o <span class="highlight">Design de Moda</span> como uma ferramenta estratégica para documentar o impacto do legado artístico de <strong>Lee Dong Wook</strong>.
-            </p>
-            <p style="margin-top: 20px;">
-                Minha missão é capturar as silhuetas e a sofisticação da <em>haute couture</em> masculina global e traduzi-las para uma voz feminina autoral: o <strong>Romantic Soft Couture</strong>. 
-                Este processo não é apenas estético, mas uma resposta criativa às camadas silenciosas de uma conexão que une o espírito brasileiro ao coração da cultura coreana.
+                A <span class="highlight">LEEWA (With Lee)</span> traduz o impacto do legado artístico de <strong>Lee Dong Wook</strong> através de uma voz feminina autoral[cite: 16, 17]. 
+                Como <strong>Fashion Designer</strong>, utilizo o design de vestuário como ferramenta estratégica para unir o espírito brasileiro ao coração da cultura coreana[cite: 14, 16, 17].
             </p>
         </section>
 
         <div class="section-title">Design Gallery</div>
         <div class="gallery">
-            <img src="sketch-ldw-tribute.jpg" alt="Croqui 1: Tradução de Silhueta">
-            <img src="sketch-soft-couture.jpg" alt="Croqui 2: Romantic Soft Concept">
-            <img src="sketch-healing-aesthetic.jpg" alt="Croqui 3: Healing OST Trend">
+            <img src="1DB06E7E-2343-4D85-8111-AF25E6D03FE2.jpg" alt="Tradução de Silhueta - Tributo">
+            <img src="3250198A-5C31-4CB5-800C-8F1A063292C9.jpg" alt="Romantic Soft Couture - Melancia Concept">
+            <img src="IMG_0597.jpg" alt="Character Styling & Identity">
         </div>
 
-        <div class="section-title">Aesthetic Alignment</div>
-        <p class="main-text" style="text-align: center;">
-            Baseada na tendência visual de 2026, a <strong>LEEWA</strong> utiliza tons pastéis e elementos orgânicos para criar uma "Fantasia que Respira". 
-            É o design servindo como ponte para o <strong>Universo Keyokan</strong>, onde a alma e o destino se alinham em silêncio.
-        </p>
+        <div class="section-title">Brand Essence</div>
+        <div class="brand-essence">
+            "Meu trabalho é uma resposta criativa às camadas silenciosas de um legado artístico. Eu documento seu impacto através de narrativas originais, estética visual e paisagens sonoras." [cite: 5, 6, 7]
+        </div>
+
+        <section class="main-text" style="text-align: center;">
+            Focada no conceito de <strong>Interlúdios Afetivos</strong>, a LEEWA explora o espaço silencioso onde a alma e o destino se alinham.
+        </section>
 
         <a href="index.html" class="back-btn">Return to Universo Keyokan</a>
     </div>
