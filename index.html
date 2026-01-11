@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lee Yuna | Multimedia Storyteller</title>
+    <title>Lee Yuna | Screenwriter & Composer</title>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@200;300;400&display=swap" rel="stylesheet">
     
     <style>
@@ -12,6 +12,7 @@
             --soft-nude: #fff5f5;
             --text: #7a5c5c;
             --white: #ffffff;
+            --gold: #d4af37;
         }
 
         * {
@@ -32,12 +33,11 @@
         }
 
         .container { 
-            max-width: 500px; 
+            max-width: 600px; 
             width: 100%;
             text-align: center; 
         }
 
-        /* Estilo da Logo */
         .logo { 
             width: 120px; 
             height: 120px;
@@ -62,12 +62,20 @@
             font-size: 0.75rem; 
             letter-spacing: 3px; 
             text-transform: uppercase; 
-            margin-bottom: 50px; 
+            margin-bottom: 10px; 
             font-weight: 300;
             opacity: 0.8;
         }
 
-        /* Títulos das Secções */
+        .education {
+            font-size: 0.65rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 50px;
+            font-weight: 400;
+            color: var(--rose);
+        }
+
         .section-title { 
             font-family: 'Cinzel', serif;
             font-size: 0.8rem; 
@@ -79,7 +87,6 @@
             display: block;
         }
 
-        /* Grelha de Links */
         .grid { 
             display: grid; 
             grid-template-columns: 1fr 1fr; 
@@ -88,6 +95,13 @@
         }
 
         .full { grid-column: span 2; }
+
+        .video-container {
+            margin-top: 20px;
+            border: 1px solid var(--rose);
+            padding: 10px;
+            background: white;
+        }
 
         a { 
             text-decoration: none; 
@@ -108,7 +122,6 @@
             letter-spacing: 4px;
         }
 
-        /* Frase Poética */
         .manifesto {
             margin-top: 50px;
             font-style: italic;
@@ -120,8 +133,18 @@
             margin-right: auto;
         }
 
+        .ip-notice {
+            margin-top: 30px;
+            font-size: 0.6rem;
+            letter-spacing: 1px;
+            opacity: 0.7;
+            color: var(--text);
+            border: 1px dashed var(--rose);
+            padding: 10px;
+        }
+
         footer { 
-            margin-top: 80px; 
+            margin-top: 40px; 
             font-size: 0.65rem; 
             letter-spacing: 2px; 
             opacity: 0.5; 
@@ -140,29 +163,36 @@
         <img src="logo-leewa.png-3.png" alt="LEEWA Logo" class="logo">
         
         <h1>LEE YUNA</h1>
-        <div class="subtitle">Multimedia Storyteller & IP Developer</div>
+        <div class="subtitle">Screenwriter & Composer</div>
+        <div class="education">Fashion Design | IP Developer</div>
 
-        <div class="section-title">Literature</div>
-        <div class="grid">
-            <a href="COLE_AQUI_O_LINK_DA_AMAZON" target="_blank">Fragmentada</a>
-            <a href="https://loja.uiclap.com/titulo/ua132906/" target="_blank">Eternidade</a>
-            <a href="COLE_AQUI_O_OUTRO_LINK" class="full">O Amor que não pediu forma</a>
-            <a href="https://substack.com/@mydearyunaofficial" class="full" style="background-color: #ff6719; color: white; border: none;">Substack: Diários de Keyokan</a>
+        <div class="section-title">New Release: Official Soundscape</div>
+        <div class="video-container full">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/S1snmHQhjvk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <a href="https://www.youtube.com/watch?v=S1snmHQhjvk" target="_blank" style="margin-top:10px; border:none; background:transparent;">Assista no YouTube</a>
         </div>
 
-        <div class="section-title">Fashion & Identity</div>
+        <div class="section-title">Literature & Universe</div>
+        <div class="grid">
+            <a href="https://substack.com/home/post/p-155026210" class="full" style="background-color: #ff6719; color: white; border: none;">Manifesto: O Direito de Existir e Criar em Paz</a>
+            <a href="https://loja.uiclap.com/titulo/ua132906/" target="_blank">Eternidade</a>
+            <a href="#" target="_blank">Fragmentada</a>
+            <a href="https://substack.com/@mydearyunaofficial" class="full">Substack: Diários de Keyokan</a>
+        </div>
+
+        <div class="section-title">Visual Identity</div>
         <div class="grid">
             <a href="#" class="full">LEEWA: Romantic Soft Couture</a>
-        </div>
-
-        <div class="section-title">Original Soundscapes</div>
-        <div class="grid">
-            <a href="https://youtu.be/dHYLsgc11kg?si=eQzmrs2QrEuXK9DH" class="full">If I Reach You (Official OST)</a>
         </div>
 
         <p class="manifesto">
             "Documenting the silent space where soul and destiny align through Affective Interludes."
         </p>
+
+        <div class="ip-notice">
+            🛡️ <b>IP INTEGRITY NOTICE:</b> All narratives, concepts, and the Universe Keyokan are registered and legally protected. 
+            Unauthorized use of this Intellectual Property is subject to legal action under Art. 184 of the Brazilian Penal Code.
+        </div>
 
         <footer>
             © 2026-2027 Brazil — South Korea<br>
