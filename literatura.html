@@ -2,17 +2,133 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Literatura | Lee Yuna</title>
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@200;300;400&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --rose-accent: #e2b4b4;
+            --background-pink: #fff5f5;
+            --text-coffee: #7a5c5c;
+            --white: #ffffff;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body { 
+            background-color: var(--background-pink); 
+            color: var(--text-coffee); 
+            font-family: 'Montserrat', sans-serif; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .container { max-width: 700px; width: 100%; }
+
+        h1 { font-family: 'Cinzel', serif; text-align: center; letter-spacing: 5px; text-transform: uppercase; margin-bottom: 40px; }
+
+        .book-section {
+            background: rgba(255, 255, 255, 0.5);
+            border: 1px solid var(--rose-accent);
+            padding: 25px;
+            margin-bottom: 30px;
+        }
+
+        .book-title { font-family: 'Cinzel', serif; font-size: 1.2rem; letter-spacing: 2px; color: var(--text-coffee); margin-bottom: 10px; display: block; }
+        
+        .status-tag {
+            display: inline-block;
+            font-size: 0.6rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            background: var(--rose-accent);
+            color: white;
+            padding: 3px 10px;
+            margin-bottom: 15px;
+        }
+
+        .synopsis { font-size: 0.9rem; line-height: 1.6; text-align: justify; margin-bottom: 15px; }
+
+        .trilogy-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 15px; }
+        .trilogy-item { 
+            border: 1px solid var(--rose-accent); 
+            padding: 10px; 
+            text-align: center; 
+            font-size: 0.7rem; 
+            background: white;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .back-link {
+            display: block;
+            text-align: center;
+            margin-top: 40px;
+            text-decoration: none;
+            color: var(--text-coffee);
+            font-size: 0.75rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            border-bottom: 1px solid var(--rose-accent);
+            width: fit-content;
+            margin: 40px auto;
+        }
+
+        footer { text-align: center; font-size: 0.7rem; opacity: 0.8; text-transform: uppercase; letter-spacing: 2px; margin-top: 20px; }
+    </style>
 </head>
 <body>
+
     <div class="container">
-        <div class="content-box">
-            <span class="badge">Em Avaliação Editorial</span>
-            <h3>Fragmentada: O Segredo de Keyokan</h3>
-            <p>Manuscrito enviado para a Editora Patuá para Bienal e FLIP 2026.</p>
-            <p><strong>Trilogia Prismática:</strong> Aquamarine (Concluído), Quartzo e Obsidiana.</p>
+        <h1>Literary Portfolio</h1>
+
+        <div class="book-section">
+            <span class="book-title">Trilogia Prismática</span>
+            <span class="status-tag">Em Desenvolvimento / Original IP</span>
+            <p class="synopsis">
+                Uma jornada épica de autodescoberta e fantasia urbana, onde cada volume explora as facetas da alma humana através da simbologia dos cristais e da luz.
+            </p>
+            <div class="trilogy-grid">
+                <div class="trilogy-item" style="background: #e0f2f1;">Aquamarine<br><small>(Finalizado)</small></div>
+                <div class="trilogy-item">Quartzo<br><small>(Em Escrita)</small></div>
+                <div class="trilogy-item">Obsidiana<br><small>(Planejamento)</small></div>
+            </div>
         </div>
+
+        <div class="book-section">
+            <span class="book-title">Fragmentada</span>
+            <span class="status-tag">Em Avaliação Editorial - Ed. Patuá</span>
+            <p class="synopsis">
+                Uma obra visceral que explora a fragmentação da identidade e a busca por unidade em meio ao caos emocional. O manuscrito foi retirado de vendas independentes para buscar a curadoria de uma editora tradicional.
+            </p>
+        </div>
+
+        <div class="book-section">
+            <span class="book-title">Quando eu te esperei pela eternidade</span>
+            <span class="status-tag">Em Avaliação Editorial - Ed. Record</span>
+            <p class="synopsis">
+                Uma narrativa lírica sobre o tempo, a espera e as conexões que transcendem a existência física. Atualmente sob análise de uma das maiores casas editoriais do país.
+            </p>
+        </div>
+
+        <div class="book-section">
+            <span class="book-title">Cartas de Amor</span>
+            <span class="status-tag">Premiado - Casa de Narciso (2026)</span>
+            <p class="synopsis">
+                Obra vencedora do concurso literário da Casa de Narciso, explorando a vulnerabilidade e a força das palavras escritas como pontes entre corações.
+            </p>
+        </div>
+
+        <a href="index.html" class="back-link">Voltar ao Início</a>
+
+        <footer>
+            © 2026 Lee Yuna Art | IP Storytelling
+        </footer>
     </div>
+
 </body>
 </html>
