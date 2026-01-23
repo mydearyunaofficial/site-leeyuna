@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lee Yuna | Multimedia Storyteller</title>
+    <title>Lee Yuna | IP & Multimedia Storyteller</title>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,500;1,300&family=Montserrat:wght@200;400&display=swap" rel="stylesheet">
     
     <style>
@@ -12,120 +12,129 @@
             --lunar-white: #F7F6F5;
             --eclipse-black: #0E0E10;
             --tragic-wine: #4B1E2F;
+            --night-blue: #1C2233;
         }
 
         body {
             margin: 0;
-            padding: 0;
             background-color: var(--lunar-white);
             color: var(--eclipse-black);
             font-family: 'Montserrat', sans-serif;
-            line-height: 1.6;
         }
 
-        /* Cabeçalho Minimalista */
         header {
-            height: 100 vh;
+            height: 80vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             text-align: center;
-            padding: 20px;
             border-bottom: 1px solid var(--misty-rose);
-        }
-
-        .logo-container img {
-            max-width: 180px; /* Ajuste conforme seu logo da raposa */
-            margin-bottom: 20px;
-            filter: sepia(0.2);
         }
 
         h1 {
             font-family: 'Cormorant Garamond', serif;
-            font-size: 3rem;
-            font-weight: 300;
-            letter-spacing: 5px;
-            text-transform: uppercase;
-            margin: 10px 0;
+            font-size: 3.5rem;
+            letter-spacing: 8px;
+            margin: 0;
         }
 
-        .subtitle {
-            font-size: 0.9rem;
-            letter-spacing: 3px;
+        .tagline {
             color: var(--tragic-wine);
+            letter-spacing: 3px;
             text-transform: uppercase;
-            margin-bottom: 30px;
+            font-size: 0.8rem;
+            margin-top: 10px;
         }
 
-        /* Seção de Conteúdo para não parecer "pobre" */
-        .grid-container {
+        section { padding: 80px 10%; }
+
+        .bio-text {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 40px;
-            padding: 80px 10% ;
+            gap: 30px;
+            margin-top: 40px;
         }
 
         .card {
+            border: 1px solid var(--misty-rose);
+            padding: 25px;
             background: white;
-            padding: 40px;
-            border: 1px solid #eee;
-            transition: 0.5s;
         }
 
-        .card:hover {
-            border-color: var(--misty-rose);
-            transform: translateY(-5px);
-        }
-
-        .card h2 {
+        .card h3 {
             font-family: 'Cormorant Garamond', serif;
-            font-size: 1.8rem;
-            border-bottom: 1px solid var(--misty-rose);
-            padding-bottom: 10px;
+            color: var(--tragic-wine);
+            font-size: 1.6rem;
         }
 
-        .btn-link {
-            display: inline-block;
-            margin-top: 20px;
-            text-decoration: none;
-            color: var(--tragic-wine);
+        .footer {
+            background: var(--night-blue);
+            color: white;
+            padding: 40px;
+            text-align: center;
             font-size: 0.8rem;
-            font-weight: bold;
-            letter-spacing: 1px;
-            border-bottom: 1px solid var(--tragic-wine);
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <div class="logo-container">
-            <img src="link-da-sua-raposa.png" alt="LEEWA Logo">
-        </div>
-        <h1>LEE YUNA</h1>
-        <p class="subtitle">Screenwriter • Fashion Design • IP Developer</p>
-    </header>
+<header>
+    <h1>LEE YUNA</h1>
+    <p class="tagline">IP & Multimedia Storyteller</p>
+</header>
 
-    <main class="grid-container">
-        <div class="card">
-            <h2>LEEWA</h2>
-            <p>Exploração da estética Romantic Soft Couture e o conceito "With Lee".</p>
-            <a href="#" class="btn-link">VER COLEÇÃO</a>
-        </div>
+<section>
+    <div class="bio-text">
+        <p>Graduanda em Design de Moda pela Estácio (2027), Lee Yuna funde Moda, Literatura e Música. Sua estética <strong>Korean Romantic Soft</strong> guia a criação da marca <strong>LEEWA</strong> e de universos narrativos complexos.</p>
+    </div>
+</section>
 
+<section style="background-color: #fff;">
+    <h2 style="font-family: 'Cormorant Garamond'; text-align: center;">Trilogia Prismática</h2>
+    <div class="grid">
         <div class="card">
-            <h2>Prismática</h2>
-            <p>Trilogia literária: Aquamarine, Quartzo e Obsidiana.</p>
-            <a href="#" class="btn-link">LER MANUSCRITOS</a>
+            <h3>Aquamarine</h3>
+            <p>Volume I: O despertar etéreo e a fluidez do azul.</p>
         </div>
+        <div class="card">
+            <h3>Quartzo</h3>
+            <p>Volume II: A resistência e as rachaduras da alma.</p>
+        </div>
+        <div class="card">
+            <h3>Obsidiana</h3>
+            <p>Volume III: O encontro final entre a sombra e a luz.</p>
+        </div>
+    </div>
+</section>
 
-        <div class="card">
-            <h2>Screenwriting</h2>
-            <p>Projetos de narrativa audiovisual e criação de mundos.</p>
-            <a href="#" class="btn-link">EXPLORAR IP</a>
-        </div>
-    </main>
+<section>
+    <h2 style="font-family: 'Cormorant Garamond'; text-align: center;">Conquistas & Projetos</h2>
+    <ul style="list-style: none; padding: 0; max-width: 600px; margin: 0 auto;">
+        <li style="margin-bottom: 20px; border-left: 2px solid var(--misty-rose); padding-left: 15px;">
+            <strong>Vencedora "Cartas de Amor"</strong> - Casa de Narciso (2026).
+        </li>
+        <li style="margin-bottom: 20px; border-left: 2px solid var(--misty-rose); padding-left: 15px;">
+            <strong>Coleção YEOWOO</strong> - Desenvolvida para o concurso Sou de Algodão.
+        </li>
+        <li style="margin-bottom: 20px; border-left: 2px solid var(--misty-rose); padding-left: 15px;">
+            <strong>YouTube: Lee Yuna</strong> - Reflexões sobre arte e propósito (@MyDearYunaOfficial).
+        </li>
+    </ul>
+</section>
+
+<footer class="footer">
+    <p>LEEWA: Romantic Soft Couture</p>
+    <p>© 2026 Lee Yuna Art. Todos os direitos reservados.</p>
+</footer>
 
 </body>
 </html>
