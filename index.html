@@ -3,194 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lee Yuna | Screenwriter & Composer</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@200;300;400&display=swap" rel="stylesheet">
-    
-    <style>
-        :root {
-            --rose: #e2b4b4;
-            --soft-nude: #fff5f5;
-            --text: #7a5c5c;
-            --white: #ffffff;
-            --substack: #ff6719;
-        }
-
-        * { box-sizing: border-box; margin: 0; padding: 0; }
-
-        body { 
-            background-color: var(--soft-nude); 
-            color: var(--text); 
-            font-family: 'Montserrat', sans-serif; 
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            min-height: 100vh;
-            padding: 40px 20px;
-        }
-
-        .container { max-width: 600px; width: 100%; text-align: center; }
-
-        .logo-wrapper { width: 100%; margin-bottom: 30px; display: flex; justify-content: center; }
-        .logo { width: 100%; max-width: 420px; height: auto; border-radius: 0 !important; }
-
-        h1 { font-family: 'Cinzel', serif; font-size: 2rem; letter-spacing: 8px; margin-bottom: 10px; text-transform: uppercase; }
-        .subtitle { font-size: 0.8rem; letter-spacing: 4px; text-transform: uppercase; margin-bottom: 5px; opacity: 0.9; }
-        .education { font-size: 0.7rem; letter-spacing: 2px; text-transform: uppercase; color: var(--rose); margin-bottom: 25px; }
-
-        .about-me {
-            margin: 30px auto;
-            padding: 20px;
-            background: rgba(255, 255, 255, 0.4);
-            border: 1px solid rgba(226, 180, 180, 0.3);
-            font-size: 0.95rem;
-            line-height: 1.8;
-            text-align: justify;
-        }
-
-        .section-title { 
-            font-family: 'Cinzel', serif; font-size: 0.85rem; letter-spacing: 4px; text-transform: uppercase; 
-            margin: 40px 0 20px; border-bottom: 1px solid var(--rose); padding-bottom: 10px; display: block;
-        }
-
-        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; width: 100%; }
-        .full { grid-column: span 2; }
-
-        a { 
-            text-decoration: none; background-color: var(--white); border: 1px solid var(--rose);
-            color: var(--text); padding: 16px; font-size: 0.8rem; letter-spacing: 2px;
-            text-transform: uppercase; transition: 0.4s; display: block;
-        }
-        a:hover { background: var(--rose); color: var(--white); letter-spacing: 4px; }
-
-        /* DESTAQUE SUBSTACK */
-        .substack-featured {
-            background-color: var(--substack) !important;
-            color: white !important;
-            border: none !important;
-            font-weight: bold;
-            box-shadow: 0 4px 15px rgba(255, 103, 25, 0.3);
-        }
-
-        .video-container { margin-top: 20px; border: 1px solid var(--rose); padding: 12px; background: white; }
-
-        /* LISTA DE IMPACTO */
-        .impact-list {
-            text-align: left;
-            font-size: 0.8rem;
-            list-style: none;
-            padding: 15px;
-            background: #fff;
-            border: 1px solid var(--rose);
-        }
-        .impact-list li { margin-bottom: 10px; padding-left: 20px; position: relative; }
-        .impact-list li::before { content: "◈"; position: absolute; left: 0; color: var(--rose); }
-
-        footer { margin-top: 50px; font-size: 0.7rem; opacity: 0.5; text-transform: uppercase; letter-spacing: 2px; }
-
-        @media (max-width: 480px) { .grid { grid-template-columns: 1fr; } .logo { max-width: 280px; } }
-    </style>
+    <title>Lee Yuna | Literatura & Healing</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,700&family=Lora:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <div class="container">
+    <header>
+        <nav>
+            <div class="logo">LEE YUNA</div>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#literatura">Literatura</a></li>
+                <li><a href="#universo">Universo</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2 class="italic">"Nem toda história nasce da luz. Algumas nascem do subterrâneo e voltam à superfície para respirar."</h2>
+            <p>Escrita como instrumento de permanência e cura.</p>
+        </div>
+    </section>
+
+    <section id="literatura">
+        <h2 class="section-title">Obras & Healing</h2>
         
-        <div class="logo-wrapper">
-            <img src="logo-leewa.png-3.png" alt="LEEWA Logo" class="logo">
-        </div>
-
-        <div class="section-title">Visual Identity</div>
-        <div class="grid">
-            <a href="visual-identity.html" class="full">
-                LEEWA: Romantic Soft Couture <br>
-                <span style="font-size: 0.6rem; opacity: 0.8;">The "With Lee" Design Concept</span>
-            </a>
-        </div>
-
-        <h1 style="margin-top: 50px;">LEE YUNA</h1>
-        <div class="subtitle">Screenwriter & Composer</div>
-        <div class="education">Fashion Design | IP Developer</div>
-
-        <section class="about-me">
-            Como <strong>Fashion Designer</strong> e <strong>Multimedia Storyteller</strong>, meu trabalho é uma resposta criativa às camadas silenciosas do legado artístico de <strong>Lee Dong Wook</strong>. Através da marca <strong>LEEWA</strong>, traduzo o Romantic Soft Couture em um ecossistema único: o <strong>Universo Keyokan</strong>. Atualmente, foco na consolidação da minha trajetória literária, com obras originais em fase de avaliação por importantes casas editoriais brasileiras.
-        </section>
-
-        <div class="section-title">Professional Expertise</div>
-        <div class="grid" style="margin-bottom: 40px;">
-            <a href="https://leletper.my.canva.site/portfolio-lee-yuna" target="_blank" class="full" style="background-color: #4a4a4a; color: white; border: none; font-weight: bold; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-                View Full Professional Portfolio <br>
-                <span style="font-size: 0.6rem; opacity: 0.8; letter-spacing: 1px;">Fashion Design | IP Development | OST Composition</span>
-            </a>
-        </div>
-
-        <div class="section-title">Literary Universe</div>
-        <div class="grid" style="margin-bottom: 20px;">
-            <a href="https://substack.com/@mydearyunaofficial" class="full substack-featured">
-                Explore the Diários de Keyokan <br>
-                <span style="font-size: 0.6rem; opacity: 0.9;">Manifesto & Original Narratives on Substack</span>
-            </a>
-        </div>
-
-        <div class="section-title">Strategic Impact & Vision</div>
-        <ul class="impact-list">
-            <li><strong>Global Resonance:</strong> Retenção de 95% do público sul-coreano em produções originais.</li>
-            <li><strong>2026 Goal:</strong> Atuar como <em>Official Content Partner</em> (OCP) na tour brasileira "MY SWEET HOME".</li>
-            <li><strong>2027 Vision:</strong> Conclusão do Bacharelado em Design de Moda e aplicação para o Visto F-5-11 (Talento Especial) na Coreia do Sul.</li>
-            <li><strong>IP Integrity:</strong> Dossiê de conceitos (Keyokan System) protegido por Hash SHA-256 e registro em andamento junto aos órgãos oficiais.</li>
-        </ul>
-        <div class="section-title">Literature & Editorial Submissions</div>
-        <div class="grid">
-            <a href="https://loja.uiclap.com/titulo/ua132906/" target="_blank">
-                Eternidade <br>
-                <span style="font-size: 0.60rem; opacity: 0.7; text-transform: none;">Versão Física | Em avaliação editorial (Record / Urutau)</span>
-            </a>
-            <a href="https://substack.com/@mydearyunaofficial" target="_blank">
-                Fragmentada <br>
-                <span style="font-size: 0.60rem; opacity: 0.7; text-transform: none;">Original em avaliação editorial (Patuá)</span>
-            </a>
-        </div>
-
-        <div class="section-title">Latest Soundscape</div>
-        <div class="video-container full">
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/S1snmHQhjvk" frameborder="0" allowfullscreen></iframe>
-            <a href="https://www.youtube.com/watch?v=S1snmHQhjvk" target="_blank" style="margin-top:10px; border:none; background:transparent; font-weight:bold;">Watch "THE LINE THAT STAYED"</a>
-        </div>
-        
-        <div class="video-container full" style="margin-top: 20px;">
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/qUDzNsArZOM?si=e83Oj4VTFHKsBgHd" frameborder="0" allowfullscreen></iframe>
-            <a href="https://www.youtube.com/watch?v=qUDzNsArZOM" target="_blank" style="margin-top:10px; border:none; background:transparent; font-weight:bold;">Watch "EU NÃO SOU SEU ÍDOLO"</a>
-        </div>
-
-        <div class="section-title">Newsletter & Inquiries</div>
-        <div class="grid" style="margin-bottom: 40px;">
-            <a href="https://substack.com/@mydearyunaofficial/subscribe" target="_blank" class="full" style="background-color: #ff6719; color: white; border: none; font-weight: bold;">
-                Subscribe to My Literary Universe <br>
-                <span style="font-size: 0.6rem; opacity: 0.9; letter-spacing: 1px;">Receive updates on Keyokan & Professional Projects</span>
-            </a>
-            <a href="mailto:leeyuna.arts@gmail.com" class="full">
-                Send a Professional Inquiry
-            </a>
-        </div>
-
-        <footer>
-            <div style="margin-bottom: 15px; letter-spacing: 3px; font-weight: 400;">
-                @MyDearYunaOfficial
+        <div class="book-card highlight">
+            <div class="book-info">
+                <h3>Fragmentada: O Segredo de Keyokan</h3>
+                <span class="badge">Em Avaliação: Bienal de SP & FLIP 2026</span>
+                <p>Uma investigação profunda sobre a memória emocional e a reconciliação com a infância. Através de Keyokan, a cidade interna, Yuna traduz a dor em arquitetura e a sobrevivência em narrativa.</p>
             </div>
-            <div style="font-style: italic; margin-bottom: 20px; opacity: 0.7;">
-                "Dedicated to 'The Other Side of the Frame' – where truth and soul meet in silence."
-            </div>
-            © 2026-2027 Brazil — South Korea<br>
-            All Rights Reserved | <a href="integrity.html" style="border:none; background:transparent; display:inline; padding:0; font-size: 0.65rem; text-decoration: underline;">IP Integrity Dossier</a>
-        </footer>
-
-        <div style="margin-top: 50px; border-top: 1px solid var(--rose); padding-top: 20px; text-align: center;">
-            <p style="font-family: 'Cinzel', serif; font-size: 0.7rem; letter-spacing: 3px; color: var(--text);">
-                AUTHENTIC CONTENT BY LEE YUNA
-            </p>
-            <p style="font-size: 0.6rem; opacity: 0.6; text-transform: uppercase; margin-top: 5px;">
-                Multimedia Storyteller & Fashion Designer | Class of 2027
-            </p>
         </div>
-    </div>
+
+        <div class="trilogia">
+            <h3>Próximos Lançamentos: Trilogia Prismática</h3>
+            <div class="prism-grid">
+                <div class="prism-item"><h4>Aquamarine</h4><p>Concluído</p></div>
+                <div class="prism-item"><h4>Quartzo</h4><p>Em progresso</p></div>
+                <div class="prism-item"><h4>Obsidiana</h4><p>Em progresso</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="universo" class="ip-section">
+        <h2 class="section-title">Estética Romantic Soft Coreana</h2>
+        <p>A tríade criativa: Moda, Literatura e Música em perfeita sincronia.</p>
+        <div class="palette">
+            <div class="color" style="background: #E8C8D8;"><span>#E8C8D8</span></div>
+            <div class="color" style="background: #4B1E2F;"><span>#4B1E2F</span></div>
+            <div class="color" style="background: #D3C3A3;"><span>#D3C3A3</span></div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Lee Yuna | IP Protected (SHA-256) | Registered Author (gov.br)</p>
+    </footer>
 
 </body>
 </html>
