@@ -1,13 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lora:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400;0,500;1,400&display=swap');
 
 :root {
     --pastel-pink: #FCE4EC; /* Rosa Pastel protagonista */
     --tragic-wine: #4B1E2F; /* Vinho para leitura nítida */
     --misty-rose: #E8C8D8;
+    --pale-gold: #D3C3A3;
 }
 
 body {
-    background-color: var(--pastel-pink); /* Fundo rosa preenchendo tudo */
+    background-color: var(--pastel-pink);
     color: var(--tragic-wine);
     font-family: 'Lora', serif;
     margin: 0;
@@ -18,7 +19,7 @@ body {
 
 .container {
     width: 100%;
-    max-width: 900px; /* Largura ideal para não parecer Linktree nem esticar */
+    max-width: 900px;
     padding: 40px 20px;
 }
 
@@ -36,7 +37,6 @@ header {
 nav ul { list-style: none; display: flex; justify-content: center; gap: 2rem; margin: 0; padding: 0; }
 nav a { text-decoration: none; color: var(--tragic-wine); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; }
 
-/* Blocos de Informação (Para não parecer pobre) */
 .content-box {
     background: white;
     padding: 30px;
@@ -55,3 +55,5 @@ nav a { text-decoration: none; color: var(--tragic-wine); font-size: 0.8rem; tex
     border-radius: 50px;
     text-transform: uppercase;
 }
+
+footer { text-align: center; padding: 40px 0; opacity: 0.6; font-size: 0.8rem; }
