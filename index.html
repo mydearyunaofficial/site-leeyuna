@@ -9,7 +9,7 @@
     <style>
         :root {
             --rose-accent: #e2b4b4;
-            --background-pink: #fff5f5; /* O rosa suave e elegante que você prefere */
+            --background-pink: #fff5f5; /* O rosa suave da LEEWA */
             --text-coffee: #7a5c5c;
             --white: #ffffff;
             --substack-orange: #ff6719;
@@ -80,7 +80,9 @@
         .video-card { background: white; padding: 10px; border: 1px solid var(--rose-accent); }
 
         footer { margin-top: 50px; font-size: 0.7rem; opacity: 0.8; text-transform: uppercase; letter-spacing: 2px; }
-        .integrity-link { display: inline-block; margin-top: 15px; color: var(--text-coffee); text-decoration: underline; font-size: 0.65rem; }
+        .footer-links { margin-top: 15px; display: flex; justify-content: center; gap: 20px; }
+        .footer-links a { border: none; background: transparent; padding: 0; text-decoration: underline; font-size: 0.65rem; display: inline; text-transform: none; }
+        .footer-links a:hover { background: transparent; color: var(--rose-accent); }
 
         @media (max-width: 480px) { .grid { grid-template-columns: 1fr; } }
     </style>
@@ -106,14 +108,13 @@
         <div class="education">Fashion Design | Multimedia Artist</div>
 
         <section class="about-me">
-            Como <strong>Fashion Designer</strong> e <strong>Multimedia Storyteller</strong>, meu trabalho é guiado pela estética <strong>Korean Romantic Soft</strong>. Atualmente desenvolvo a <strong>Trilogia Prismática</strong>, com o manuscrito de <strong>Aquamarine</strong> concluído. Minha trajetória une moda, música e literatura em um ecossistema único.
+            Como <strong>Fashion Designer</strong> e <strong>Multimedia Storyteller</strong>, meu trabalho é guiado pela estética <strong>Korean Romantic Soft</strong>. Atualmente desenvolvo a <strong>Trilogia Prismática</strong>, com o volume <strong>Aquamarine</strong> concluído. Minha trajetória une moda, música e literatura em um ecossistema único.
         </section>
 
-        <div class="section-title">Trilogia Prismática</div>
+        <div class="section-title">Literary Universe</div>
         <div class="grid">
-            <a href="#" class="full">Aquamarine (Finalizado)</a>
-            <a href="#">Quartzo</a>
-            <a href="#">Obsidiana</a>
+            <a href="literatura.html" class="full">Ver Portfólio Literário Completo</a>
+            <a href="https://substack.com/@mydearyunaofficial" target="_blank" class="full substack-featured">Explore Diários de Keyokan on Substack</a>
         </div>
 
         <div class="section-title">Latest Visual Narratives</div>
@@ -124,18 +125,23 @@
             </div>
         </div>
 
-        <div class="section-title">Literary Submissions & News</div>
+        <div class="section-title">Strategic Impact & Vision</div>
         <div class="grid">
-            <a href="https://substack.com/@mydearyunaofficial" target="_blank" class="full substack-featured">Explore Diários de Keyokan on Substack</a>
-            <a href="#">Vencedora: Casa de Narciso (2026)</a>
-            <a href="#">Coleção YEOWOO (Concurso)</a>
+            <a href="#" class="full">Coleção YEOWOO (Concurso Sou de Algodão)</a>
+            <div style="background: white; border: 1px solid var(--rose-accent); padding: 15px; font-size: 0.7rem; text-align: left;">
+                <p>◈ <strong>2026:</strong> Vencedora Casa de Narciso</p>
+                <p>◈ <strong>2027:</strong> Graduação em Moda (Estácio)</p>
+                <p>◈ <strong>IP Protection:</strong> Hash SHA-256</p>
+            </div>
         </div>
 
         <footer>
             <div style="margin-bottom: 10px; letter-spacing: 3px;">@MyDearYunaOfficial</div>
             © 2026 Rio de Janeiro — Seoul<br>
-            All Rights Reserved<br>
-            <a href="integrity.html" class="integrity-link">IP Integrity Dossier</a>
+            All Rights Reserved
+            <div class="footer-links">
+                <a href="integrity.html">IP Integrity Dossier</a>
+            </div>
         </footer>
     </div>
 
