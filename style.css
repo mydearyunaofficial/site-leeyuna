@@ -1,122 +1,28 @@
-/* Paleta de Cores Lee Yuna */
 :root {
-    --misty-rose: #E8C8D8;
-    --tragic-wine: #4B1E2F;
-    --pale-gold: #D3C3A3;
-    --lunar-white: #F7F6F5;
-    --eclipse-black: #0E0E10;
+    --pastel-pink: #FADADD; /* Rosa Pastel clássico e suave */
+    --misty-rose: #E8C8D8;  /* Rosa que você já utiliza como destaque */
+    --tragic-wine: #4B1E2F; /* Cor do texto e detalhes profundos */
+    --lunar-white: #FCFBFB; /* Branco quase puro para clareza */
 }
 
 body {
     background-color: var(--lunar-white);
-    color: var(--eclipse-black);
-    font-family: 'Lora', serif;
-    margin: 0;
-    line-height: 1.6;
-}
-
-header {
-    padding: 2rem;
-    background: rgba(247, 246, 245, 0.9);
-    position: sticky;
-    top: 0;
-    z-index: 100;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.5rem;
-    letter-spacing: 3px;
     color: var(--tragic-wine);
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 2rem;
-}
-
-nav a {
-    text-decoration: none;
-    color: var(--eclipse-black);
-    font-size: 0.9rem;
-    text-transform: uppercase;
+    font-family: 'Lora', serif;
 }
 
 .hero {
     height: 60vh;
+    background-color: var(--pastel-pink); /* Agora com o Rosa Pastel */
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
-    background-color: var(--misty-rose); /* Pode substituir por imagem de Keyokan */
-}
-
-.italic {
-    font-family: 'Playfair Display', serif;
-    font-style: italic;
-    font-size: 2rem;
-    max-width: 800px;
+    border-bottom: 1px solid var(--misty-rose);
 }
 
 .section-title {
-    text-align: center;
-    font-family: 'Playfair Display', serif;
     color: var(--tragic-wine);
-    margin: 4rem 0 2rem;
-}
-
-.book-card.highlight {
-    background: white;
-    max-width: 700px;
-    margin: 0 auto;
-    padding: 3rem;
-    border-left: 5px solid var(--pale-gold);
-    box-shadow: 0 10px 30px rgba(75, 30, 47, 0.05);
-}
-
-.badge {
-    background: var(--tragic-wine);
-    color: white;
-    padding: 0.3rem 0.8rem;
-    font-size: 0.7rem;
-    text-transform: uppercase;
-    border-radius: 50px;
-}
-
-.prism-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-.palette {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    padding: 2rem;
-}
-
-.color {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-footer {
-    text-align: center;
-    padding: 4rem 2rem;
-    font-size: 0.8rem;
-    color: var(--tragic-wine);
+    border-bottom: 2px solid var(--pastel-pink);
+    display: inline-block;
+    padding-bottom: 10px;
 }
