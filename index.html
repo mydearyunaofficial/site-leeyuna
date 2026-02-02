@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lee Yuna | IP Developer & Screenwriter</title>
+    <title>Lee Yuna | IP & Multimedia Storytelling</title>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@200;300;400&display=swap" rel="stylesheet">
     
     <style>
@@ -13,6 +13,7 @@
             --text-coffee: #7a5c5c;
             --white: #ffffff;
             --substack-orange: #ff6719;
+            --wattpad-orange: #FF6122;
         }
 
         * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -31,7 +32,7 @@
         .container { max-width: 600px; width: 100%; text-align: center; }
 
         .logo-wrapper { width: 100%; margin-bottom: 30px; display: flex; justify-content: center; }
-        .logo { width: 100%; max-width: 420px; height: auto; }
+        .logo { width: 100%; max-width: 420px; height: auto; transition: 0.5s ease; }
 
         h1 { font-family: 'Cinzel', serif; font-size: 2rem; letter-spacing: 8px; margin-bottom: 10px; text-transform: uppercase; }
         .subtitle { font-size: 0.8rem; letter-spacing: 4px; text-transform: uppercase; margin-bottom: 5px; opacity: 0.9; }
@@ -69,6 +70,12 @@
         }
         a:hover { background: var(--rose-accent); color: var(--white); letter-spacing: 4px; }
 
+        .wattpad-featured {
+            background-color: #fce4ec !important;
+            border: 2px solid var(--rose-accent) !important;
+            font-weight: bold;
+        }
+
         .substack-featured {
             background-color: var(--substack-orange) !important;
             color: white !important;
@@ -91,24 +98,24 @@
     <div class="container">
         
         <div class="logo-wrapper">
-            <img src="logo-leewa.png-3.png" alt="LEEWA Logo" class="logo">
+            <img src="logo-leewa.png-5.png" alt="Keyokan Universe Logo" class="logo">
         </div>
 
-        <div class="section-title">Visual Identity</div>
-        <div class="grid">
-            <a href="visual-identity.html" class="full">
-                LEEWA: Romantic Soft Couture <br>
-                <span style="font-size: 0.6rem; opacity: 0.8;">The "With Lee" Design Concept</span>
-            </a>
-        </div>
-
-        <h1 style="margin-top: 50px;">LEE YUNA</h1>
+        <h1>LEE YUNA</h1>
         <div class="subtitle">Creator of Universo Keyokan</div>
-        <div class="education">IP Developer | Screenwriter | Fashion Design</div>
+        <div class="education">IP Developer | Screenwriter | Cinema & Audiovisual</div>
 
         <section class="about-me">
-            Como <strong>Multimedia Storyteller</strong>, meu trabalho é a construção do <strong>Universo Keyokan</strong>. Através da estética <strong>Korean Romantic Soft</strong> e da marca <strong>LEEWA</strong>, projeto narrativas que unem moda, música e literatura em um ecossistema único e protegido.
+            Como <strong>Multimedia Storyteller</strong>, meu trabalho é a construção do <strong>Universo Keyokan</strong>. Através da estética <strong>Korean Romantic Soft</strong>, projeto ecossistemas narrativos que unem música, literatura e audiovisual em uma experiência única e protegida.
         </section>
+
+        <div class="section-title">Latest Release</div>
+        <div class="grid">
+            <a href="https://www.wattpad.com/story/407088345-amor-nos-bastidores" target="_blank" class="full wattpad-featured">
+                Amor nos Bastidores <br>
+                <span style="font-size: 0.6rem; opacity: 0.8;">#1 em Cultura Coreana no Wattpad</span>
+            </a>
+        </div>
 
         <div class="section-title">Literary Portfolio</div>
         <div class="grid">
@@ -127,12 +134,13 @@
         <div class="section-title">Strategic Impact</div>
         <div style="background: white; border: 1px solid var(--rose-accent); padding: 15px; font-size: 0.7rem; text-align: left;">
             <p>◈ <strong>2026:</strong> Vencedora Casa de Narciso</p>
-            <p>◈ <strong>2027:</strong> Graduação em Design de Moda</p>
+            <p>◈ <strong>2026:</strong> Seleção Antologia BRASILIÊ (Bienal do Livro SP)</p>
+            <p>◈ <strong>2029:</strong> K-ARTS Selection Master (Seoul)</p>
             <p>◈ <strong>IP Protection:</strong> Keyokan System (SHA-256)</p>
         </div>
 
         <footer>
-            <div style="margin-bottom: 10px; letter-spacing: 3px;">@MyDearYunaOfficial</div>
+            <div style="margin-bottom: 10px; letter-spacing: 3px;">@mydearyunaofficial</div>
             © 2026 Rio de Janeiro — Seoul<br>
             All Rights Reserved
             <div class="footer-links">
