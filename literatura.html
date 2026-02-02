@@ -54,6 +54,30 @@
 
         .synopsis { font-size: 0.9rem; line-height: 1.6; text-align: justify; margin-bottom: 15px; }
 
+        /* Estilo para os links de compra */
+        .buy-links {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .buy-button {
+            text-decoration: none;
+            font-size: 0.65rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            padding: 8px 15px;
+            border: 1px solid var(--rose-accent);
+            background: white;
+            color: var(--text-coffee);
+            transition: 0.3s;
+        }
+
+        .buy-button:hover {
+            background: var(--rose-accent);
+            color: white;
+        }
+
         .trilogy-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 15px; }
         .trilogy-item { 
             border: 1px solid var(--rose-accent); 
@@ -113,8 +137,12 @@
             <span class="book-title">Quando eu te esperei pela eternidade</span>
             <span class="status-tag">Em Avaliação Editorial - Ed. Record</span>
             <p class="synopsis">
-                Uma história sobre o tempo e a espera metafísica. Submetida para análise em uma das maiores casas editoriais do país, marcando a transição para o mercado editorial tradicional.
+                Uma história sobre o tempo e a espera metafísica. Submetida para análise em uma das maiores casas editoriais do país, marcando a transição para o mercado tradicional. Atualmente disponível em edições independentes.
             </p>
+            <div class="buy-links">
+                <a href="https://www.amazon.com.br/Quando-Eu-Esperei-Pela-Eternidade-ebook/dp/B0G2MWV1HW/ref=sr_1_1?crid=QL5PSGW4T9LY&dib=eyJ2IjoiMSJ9.GAcyT1C0ECYfiQGR5GQFd2cL3nOyfEgTCqLbGvFfuck.UbFi0UmINMCNJbleo4VHI79FuVj17FLb2SwOjngQcLI&dib_tag=se&keywords=quando+eu+te+esperei+pela+eternidade&qid=1770049869&sprefix=Quando+eu+te+esp%2Caps%2C246&sr=8-1" target="_blank" class="buy-button">Comprar na Amazon</a>
+                <a href="https://loja.uiclap.com/titulo/ua132906/" target="_blank" class="buy-button">Comprar na UICLAP</a>
+            </div>
         </div>
 
         <div class="book-section">
