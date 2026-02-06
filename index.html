@@ -2,189 +2,98 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Lee Yuna — IP Storyteller & Image Director</title>
 
-  <meta name="description" content="Lee Yuna (Letícia Peres) — IP Storyteller, Writer and Image Director. Strategic storytelling, visual research and narrative-driven image creation.">
+  <meta name="description" content="Lee Yuna (Letícia Peres) — IP Storyteller & Image Director shaping narratives, aesthetics and perception.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Inter:wght@400&display=swap" rel="stylesheet">
 
   <style>
-    /* Simple language toggle */
-    .lang-pt {
-      display: none;
+    /* RESET */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
 
-    .language-switch {
-      position: fixed;
-      top: 24px;
-      right: 24px;
-      font-size: 0.9rem;
-      letter-spacing: 0.05em;
-      cursor: pointer;
+    body {
+      background-color: #F5F5F7; /* Lunar White */
+      color: #333333; /* Charcoal */
+      font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      line-height: 1.6;
     }
 
-    .language-switch span {
-      opacity: 0.5;
-      margin-left: 8px;
+    /* HERO SECTION */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
     }
 
-    .language-switch span.active {
-      opacity: 1;
-      text-decoration: underline;
+    .hero-inner {
+      max-width: 960px;
+      padding: 120px 80px;
+    }
+
+    .hero h1 {
+      font-family: "Playfair Display", "Libre Baskerville", "Times New Roman", serif;
+      font-size: 3rem;
+      font-weight: 500;
+      line-height: 1.2;
+      margin-bottom: 32px;
+      position: relative;
+    }
+
+    /* Subtle Misty Pink detail */
+    .hero h1::after {
+      content: "";
+      display: block;
+      width: 64px;
+      height: 2px;
+      background-color: #F3E0E2; /* Misty Pink */
+      margin-top: 24px;
+    }
+
+    .hero p {
+      font-size: 1rem;
+      letter-spacing: 0.02em;
+      max-width: 520px;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      .hero-inner {
+        padding: 80px 32px;
+      }
+
+      .hero h1 {
+        font-size: 2.2rem;
+      }
     }
   </style>
 </head>
 
 <body>
 
-  <!-- LANGUAGE SWITCH -->
-  <div class="language-switch">
-    <span id="btn-en" class="active" onclick="setLanguage('en')">EN</span>
-    <span id="btn-pt" onclick="setLanguage('pt')">PT</span>
-  </div>
-
   <!-- HERO -->
-  <header id="hero">
-
-    <!-- EN -->
-    <div class="lang-en">
+  <section class="hero">
+    <div class="hero-inner">
       <h1>
-        Where imagination becomes structure<br>
-        and image becomes destiny.
+        I design meaning.<br>
+        From fictional universes to strategic image.
       </h1>
 
       <p>
         IP Storyteller & Image Director shaping narratives, aesthetics and perception.
       </p>
     </div>
-
-    <!-- PT -->
-    <div class="lang-pt">
-      <h1>
-        Onde a imaginação ganha estrutura<br>
-        e a imagem se torna destino.
-      </h1>
-
-      <p>
-        IP Storyteller e Diretora de Imagem moldando narrativas, estética e percepção.
-      </p>
-    </div>
-
-  </header>
-
-  <!-- ABOUT -->
-  <section id="about">
-
-    <!-- EN -->
-    <div class="lang-en">
-      <h2>About</h2>
-
-      <p>
-        Letícia Peres, professionally known as Lee Yuna, is an award-winning IP Storyteller and writer,
-        recognized for creating emotionally layered universes where identity, image and meaning intersect.
-      </p>
-
-      <p>
-        Her work is grounded in visual research and strategic storytelling, transforming abstract concepts
-        into coherent narratives, brand identities and literary worlds.
-      </p>
-
-      <p>
-        She operates at the intersection of creative direction, image strategy and authorship,
-        translating vision into presence and concept into form.
-      </p>
-    </div>
-
-    <!-- PT -->
-    <div class="lang-pt">
-      <h2>Sobre</h2>
-
-      <p>
-        Letícia Peres, conhecida profissionalmente como Lee Yuna, é IP Storyteller e escritora premiada,
-        reconhecida pela criação de universos narrativos onde identidade, imagem e significado se encontram.
-      </p>
-
-      <p>
-        Seu trabalho é fundamentado em pesquisa visual e storytelling estratégico,
-        transformando conceitos abstratos em narrativas consistentes, identidades de marca e literatura.
-      </p>
-
-      <p>
-        Atua na interseção entre direção criativa, estratégia de imagem e autoria,
-        materializando visão em presença e conceito em forma.
-      </p>
-    </div>
-
   </section>
-
-  <!-- EXPERIENCE -->
-  <section id="experience">
-
-    <!-- EN -->
-    <div class="lang-en">
-      <h2>Experience & Impact</h2>
-      <ul>
-        <li>
-          <strong>2026 – Present</strong><br>
-          Image Director — AF Imóveis Rio
-        </li>
-      </ul>
-    </div>
-
-    <!-- PT -->
-    <div class="lang-pt">
-      <h2>Experiência & Impacto</h2>
-      <ul>
-        <li>
-          <strong>2026 – Presente</strong><br>
-          Diretora de Imagem — AF Imóveis Rio
-        </li>
-      </ul>
-    </div>
-
-  </section>
-
-  <!-- FOOTER -->
-  <footer id="signature">
-
-    <!-- EN -->
-    <div class="lang-en">
-      <p>
-        Korean Romantic Soft · Strategic Storytelling · Visual Research
-      </p>
-    </div>
-
-    <!-- PT -->
-    <div class="lang-pt">
-      <p>
-        Korean Romantic Soft · Storytelling Estratégico · Pesquisa Visual
-      </p>
-    </div>
-
-  </footer>
-
-  <!-- JS LANGUAGE TOGGLE -->
-  <script>
-    function setLanguage(lang) {
-      const enBlocks = document.querySelectorAll('.lang-en');
-      const ptBlocks = document.querySelectorAll('.lang-pt');
-
-      const btnEn = document.getElementById('btn-en');
-      const btnPt = document.getElementById('btn-pt');
-
-      if (lang === 'pt') {
-        enBlocks.forEach(el => el.style.display = 'none');
-        ptBlocks.forEach(el => el.style.display = 'block');
-        btnEn.classList.remove('active');
-        btnPt.classList.add('active');
-        document.documentElement.lang = 'pt-BR';
-      } else {
-        enBlocks.forEach(el => el.style.display = 'block');
-        ptBlocks.forEach(el => el.style.display = 'none');
-        btnPt.classList.remove('active');
-        btnEn.classList.add('active');
-        document.documentElement.lang = 'en';
-      }
-    }
-  </script>
 
 </body>
 </html>
