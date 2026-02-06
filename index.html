@@ -13,70 +13,72 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Inter:wght@400&display=swap" rel="stylesheet">
 
-  <style>
-    /* RESET */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
+<style>
+  /* RESET BÁSICO */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: #f9f9f9; /* branco levemente acinzentado */
+    color: #1a1a1a;
+    font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* CONTAINER CENTRAL (mesmo sem div) */
+  body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* BLOCO DE TEXTO */
+  h1,
+  p {
+    text-align: center;
+  }
+
+  /* H1 — Impacto, luxo, respiro */
+  h1 {
+    font-family: "Playfair Display", "Cormorant Garamond", "Times New Roman", serif;
+    font-size: 3.4rem;
+    font-weight: 500;
+    line-height: 1.25; /* evita linhas coladas */
+    max-width: 900px;
+    margin-bottom: 32px;
+  }
+
+  /* P — Minimal, editorial */
+  p {
+    font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    max-width: 600px;
+  }
+
+  /* RESPIRO LATERAL + TOPO */
+  body {
+    padding: 120px 64px;
+  }
+
+  /* RESPONSIVO */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2.2rem;
     }
 
     body {
-      background-color: #F5F5F7; /* Lunar White */
-      color: #333333; /* Charcoal */
-      font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
-      -webkit-font-smoothing: antialiased;
-      line-height: 1.6;
+      padding: 80px 24px;
     }
+  }
+</style>
 
-    /* HERO SECTION */
-    .hero {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-    }
-
-    .hero-inner {
-      max-width: 960px;
-      padding: 120px 80px;
-    }
-
-    .hero h1 {
-      font-family: "Playfair Display", "Libre Baskerville", "Times New Roman", serif;
-      font-size: 3rem;
-      font-weight: 500;
-      line-height: 1.2;
-      margin-bottom: 32px;
-      position: relative;
-    }
-
-    /* Subtle Misty Pink detail */
-    .hero h1::after {
-      content: "";
-      display: block;
-      width: 64px;
-      height: 2px;
-      background-color: #F3E0E2; /* Misty Pink */
-      margin-top: 24px;
-    }
-
-    .hero p {
-      font-size: 1rem;
-      letter-spacing: 0.02em;
-      max-width: 520px;
-    }
-
-    /* RESPONSIVE */
-    @media (max-width: 768px) {
-      .hero-inner {
-        padding: 80px 32px;
-      }
-
-      .hero h1 {
-        font-size: 2.2rem;
-      }
-    }
-  </style>
 </head>
 
 <body>
