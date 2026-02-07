@@ -3,81 +3,171 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Letícia Peres | Yuna</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Montserrat:wght@200;300&display=swap" rel="stylesheet">
+    <title>Letícia Peres | Yuna - IP Storyteller & Image Director</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Montserrat:wght@200;300;400&display=swap" rel="stylesheet">
     <style>
         :root {
             --lunar-white: #FBFBFB;
             --misty-pink: #F3E0E2;
             --charcoal: #1A1A1A;
+            --soft-gray: #666;
         }
 
         body, html {
             margin: 0;
             padding: 0;
-            height: 100%;
             background-color: var(--lunar-white);
+            font-family: 'Montserrat', sans-serif;
+            color: var(--charcoal);
+            scroll-behavior: smooth;
+        }
+
+        /* Hero Section */
+        header {
+            height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-family: 'Montserrat', sans-serif;
-            color: var(--charcoal);
             text-align: center;
-        }
-
-        .container {
-            max-width: 800px;
-            padding: 20px;
+            padding: 0 20px;
         }
 
         h1 {
             font-family: 'Cormorant Garamond', serif;
-            font-size: clamp(2rem, 5vw, 3.5rem); /* Tamanho responsivo */
+            font-size: clamp(2rem, 5vw, 3.5rem);
             font-weight: 300;
             line-height: 1.2;
             margin-bottom: 20px;
-            letter-spacing: -0.02em;
         }
 
-        p {
-            font-size: clamp(0.9rem, 2vw, 1.1rem);
+        .subtitle {
+            font-size: clamp(0.8rem, 2vw, 1rem);
             font-weight: 200;
             text-transform: uppercase;
             letter-spacing: 0.3em;
-            color: #666;
+            color: var(--soft-gray);
+        }
+
+        /* Content Sections */
+        section {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 100px 20px;
+            border-top: 1px solid #eee;
+        }
+
+        h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2rem;
+            font-weight: 300;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+        }
+
+        .card {
+            padding: 20px;
+            background: #fff;
+            border: 1px solid #f0f0f0;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            border-color: var(--misty-pink);
+        }
+
+        .card h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            font-size: 0.9rem;
             line-height: 1.6;
+            color: var(--soft-gray);
         }
 
-        .line {
-            width: 40px;
-            height: 1px;
-            background-color: var(--misty-pink);
-            margin: 30px auto;
+        /* Links & Buttons */
+        .links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 40px;
+            flex-wrap: wrap;
         }
 
-        /* Suavidade na entrada */
-        .fade-in {
-            animation: fadeIn 2s ease-in;
+        a {
+            text-decoration: none;
+            color: var(--charcoal);
+            font-size: 0.8rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            border-bottom: 1px solid var(--misty-pink);
+            padding-bottom: 5px;
+            transition: 0.3s;
         }
 
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(10px); }
-            to { opacity: 1; transform: translateY(0); }
+        a:hover {
+            color: var(--soft-gray);
+            border-color: var(--charcoal);
+        }
+
+        footer {
+            text-align: center;
+            padding: 50px;
+            font-size: 0.7rem;
+            letter-spacing: 0.2em;
+            color: #ccc;
         }
     </style>
 </head>
 <body>
 
-    <div class="container fade-in">
-        <h1>
-            I design meaning.<br>
-            From fictional universes to strategic image.
-        </h1>
-        <div class="line"></div>
-        <p>
-            IP Storyteller & Image Director shaping narratives, aesthetics and perception.
-        </p>
-    </div>
+    <header>
+        <div class="fade-in">
+            <h1>I design meaning.<br>From fictional universes to strategic image.</h1>
+            <p class="subtitle">IP Storyteller & Image Director</p>
+            <div class="links">
+                <a href="#projects">Portfolio</a>
+                <a href="#about">About</a>
+                <a href="https://leeyuna.art/ip-integrity">IP Integrity</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="projects">
+        <h2>Strategic Impact & Narrative</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>AF Imóveis Rio</h3>
+                <p>Direção de Imagem e estratégia de marca. Transformando o mercado imobiliário através de uma curadoria estética e narrativa de luxo.</p>
+            </div>
+            <div class="card">
+                <h3>Universo Keyokan</h3>
+                <p>Criação e desenvolvimento de Propriedade Intelectual (IP). Um ecossistema de histórias que exploram o tempo, o silêncio e a memória.</p>
+            </div>
+            <div class="card">
+                <h3>Escrita Premiada</h3>
+                <p>Vencedora do concurso Casa de Narciso e selecionada para a antologia Brasiliê 2026. A literatura como base de toda estratégia visual.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="integrity" style="text-align: center;">
+        <h2>IP Integrity Dossier</h2>
+        <p style="font-size: 0.9rem; color: var(--soft-gray);">Proteção técnica e jurídica de Propriedade Intelectual através de registros imutáveis e verificação SHA-256.</p>
+        <a href="https://leeyuna.art/ip-integrity">Acessar Documentação de Segurança</a>
+    </section>
+
+    <footer>
+        LETÍCIA PERES / YUNA © 2026 — RIO DE JANEIRO & SEOUL
+    </footer>
 
 </body>
 </html>
